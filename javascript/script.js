@@ -8,7 +8,9 @@ $(function () {
   // function? How can DOM traversal be used to get the "hour-x" id of the
   // time-block containing the button that was clicked? How might the id be
   // useful when saving the description in local storage?
-  //
+  $('.saveBtn').click(function() {
+    alert("The button was clicked");
+  });
   // TODO: Add code to apply the past, present, or future class to each time
   // block by comparing the id to the current hour. HINTS: How can the id
   // attribute of each time-block be used to conditionally add or remove the
@@ -19,5 +21,28 @@ $(function () {
   // the values of the corresponding textarea elements. HINT: How can the id
   // attribute of each time-block be used to do this?
   //
-  // TODO: Add code to display the current date in the header of the page.
+  // TODO ✔️: Add code to display the current date in the header of the page.
+  //***dddd=current day name, MMMM=full month name, DD=days of month(1-31), 
+  //***YYYY=year (4 digit) */
+  // var date = dayjs().format('dddd MMMM DD YYYY');
+  // // console.log(date)
+  // $('#currentDay').text('Current Date: ' + date)
+  // //***h=hour(12-hour clock)
+  // var currentHour = dayjs().format('h')
+  // //***h=hour(12-hour clock)
+  // var currentPeriod = dayjs().format('A')
+  // // console.log(currentHour + currentPeriod);
+
 });
+
+
+//***If the var is === to the first hour number, is red. < is green, > is grey */
+var date = dayjs().format('dddd, MMMM DD YYYY');
+  // console.log(date)
+  $('#currentDay').text('Current Date: ' + date)
+  //***h=hour(12-hour clock)
+  var currentHour = dayjs().format('h')
+  //***h=hour(12-hour clock)
+  var currentPeriod = dayjs().format('A')
+  // console.log(currentHour + currentPeriod);
+  
