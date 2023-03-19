@@ -12,6 +12,8 @@ A past hour will be marked grey, the present hour is red, and future hours are g
 
 Knowing that, start planning away! Click the empty text boxes and type out your upcoming tasks before clicking the light-blue save buttons on the right. Doing so will save what you wrote, so even if you leave the page it should stay the next time you look at your planner! Delete your text and click save if you need to erase anything.
 
+For devs testing the working hour coloration, try un-commenting "var presentTime = 14" and comment out the "dayjs().hour()" line right above it. You should see the 2PM line turn red and the others change accordingly too!
+
 Here is an example of what the page will look like for you:
 ![alt text](./Assets/CompletedScreenshot.png)
 
